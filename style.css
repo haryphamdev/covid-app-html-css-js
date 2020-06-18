@@ -1,0 +1,126 @@
+.red {
+    border: 1px solid red;
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.container {
+    margin: 20px 30px 0 30px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    background: #ececec;
+}
+
+.title-child{
+    width: fit-content;
+    font-weight: 600;
+    background: #ececec;
+}
+.overview {
+    margin: 10px 0 10px 0;
+}
+
+.covid {
+    display: flex;
+    flex-direction: row;
+}
+.covid-sum,
+.covid-death,
+.covid-recover,
+.covid-still {
+    width: 100%;
+    padding: 15px;
+    margin-right: 15px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.country {
+
+}
+
+.top-table {
+    display: flex;
+    flex-direction: row;
+}
+.top-biggest, .top-smallest {
+    width: 100%;
+    margin-right: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid grey
+}
+
+tbody tr:hover td {
+    background-color: #ddd;
+}
+
+.display-name-country, thead {
+    white-space: nowrap;
+}
+
+.search {
+    margin-top: 15px;
+}
+input {
+    margin-top: 20px;
+    padding: 5px;
+    min-width: 300px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+input:focus {
+    outline: 1px solid #0089ff;
+}
+
+button {
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+}
+.item-result {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.date {
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+li {
+    padding-top: 15px;
+}
+
+.info {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}

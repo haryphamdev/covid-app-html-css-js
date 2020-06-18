@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Moment, JQuery library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="ajax.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        Covid App
+    </div>
+    <div class="overview">
+        <h3 class="title-child">Overview: </h3>
+        <div class="covid">
+            <div class="covid-sum">
+                <span> Total confirmed:</span>
+                <div id="covidSum">Loading ...</div>
+            </div>
+            <div class="covid-death">
+                <span>Total deaths:</span>
+                <div id="covidDeath">Loading ...</div>
+            </div>
+            <div class="covid-recover">
+                <span>Total recovered:</span>
+                <div id="covidRecover">Loading ...</div>
+            </div>
+            <div class="covid-still">
+                <span>Total active:</span>
+                <div id="covidStill">Loading ...</div>
+            </div>
+        </div>
+    </div>
+    <div class="country">
+        <h3 class="title-child">Top 10:</h3>
+        <div class="top-table">
+            <div class="top-biggest">
+                <div>Top 10 biggest here</div>
+                <table id="tableBiggest">
+                    <thead>
+                    <tr>
+                        <td>No.</td>
+                        <td>Country</td>
+                        <td>Total confirmed</td>
+                        <td>Total deaths</td>
+                        <td>Total recovered</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- generate row by javascript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="top-smallest">
+                <div>Top 10 smalles here</div>
+                <table id="tableSmallest">
+                    <thead>
+                    <tr>
+                        <td>No.</td>
+                        <td>Country</td>
+                        <td>Total confirmed</td>
+                        <td>Total deaths</td>
+                        <td>Total recovered</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- generate row by javascript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="title-child"><h3>Search by country:</h3></div>
+        <div class="input-search">
+            <input type="text" id="inputSearch" class="input-search" placeholder="Search by country ISO code...">
+            <button class="btn-search" id="btnSearch">Search</button>
+        </div>
+        <div class="info" id="infoResult"></div>
+        <div class="result" id="generateResult">
+
+        </div>
+        <br><br><br><br><br>
+
+    </div>
+</div>
+</body>
+</html>
